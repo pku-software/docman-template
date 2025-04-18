@@ -5,23 +5,7 @@
 #include <string>
 #include <sstream>
 
-// Singleton class to manage the API endpoint
-class APIEndpoint {
-private:
-  std::string endpoint = "http://docman.zhuof.wang";
-  APIEndpoint() {
-    const char *env_override = std::getenv("DOCMAN_API_ENDPOINT");
-    if (env_override != nullptr) {
-      endpoint = env_override;
-    }
-  }
-
-public:
-  static const std::string &get() {
-    static APIEndpoint instance;
-    return instance.endpoint;
-  }
-};
+const std::string API_ENDPOINT{"http://docman.lcpu.dev"};
 
 inline std::string encodeUriComponent(const std::string& s) {
     std::string encoded;

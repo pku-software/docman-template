@@ -18,4 +18,4 @@ jobs:
           cmake-version: '3.30.x'
       - name: Build & Test
         shell: bash
-        run: docman-judge .
+        run: FORCE_COLOR=1 docman-judge .

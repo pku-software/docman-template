@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 
-const std::string API_ENDPOINT{"http://docman.lcpu.dev"};
+const std::string API_ENDPOINT{"http://docman.zhuof.wang"};
 
 inline std::string encodeUriComponent(const std::string& s) {
     std::string encoded;

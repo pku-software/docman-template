@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     std::ostream& output = std::cout;
 
     // output << input;  // print the paragraph first
-    // output << "\nReferences:\n";
+    // output << "\n\nReferences:\n";
     
     for (auto c : printedCitations) {
         // FIXME: print citation
